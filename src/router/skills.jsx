@@ -1,5 +1,8 @@
 import React from "react";
+import Page from "../templates/page";
 
-const Skills = (props) => <h1>Skills</h1>;
+const Skills = (props) => {
+  return <Page title="skills"></Page>;
+};
 
 export default Skills;
