@@ -7,6 +7,7 @@ import AboutMe from "./router/aboutMe";
 import Contact from "./router/contact";
 import NavBar from "./components/navbar";
 import styled from "styled-components";
+import Footer from "./components/footer";
 
 const SApp = styled.div``;
 
@@ -26,6 +27,7 @@ const App = () => {
           <Redirect from="*" to="/" />
         </Switch>
       </BrowserRouter>
+      <Footer />
     </SApp>
   );
 };

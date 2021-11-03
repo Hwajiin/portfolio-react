@@ -26,6 +26,9 @@ const GlobalStyles = createGlobalStyle`
 
         --main-text-shadow: 0px 0px 3px #fc00ff;
 
+        // Font size
+        --xs-font-size: 13px;
+
         /**
         Margin
          */
