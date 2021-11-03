@@ -31,6 +31,7 @@ const Box = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
+  overflow: hidden;
 `;
 
 const First = styled.div`

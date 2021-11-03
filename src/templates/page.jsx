@@ -1,16 +1,24 @@
 import React from "react";
 import styled from "styled-components";
 
-const SPage = styled.div``;
+const SPage = styled.div`
+  margin: 30px var(--main-padding);
+`;
 
-const Title = styled.h1`
+const Title = styled.span`
   font-size: 5em;
+  text-transform: capitalize;
+`;
+
+const Content = styled.div`
+  margin-top: 20px;
 `;
 
 const Page = ({ title, children }) => {
   return (
     <SPage>
       <Title>{title}</Title>
+      <Content>{children}</Content>
     </SPage>
   );
 };
