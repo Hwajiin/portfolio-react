@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import styled from "styled-components";
+import Billboard from "./billboard";
 
 const Nav = styled.nav`
   width: 100%;
@@ -40,27 +41,48 @@ const SLink = styled(Link)`
 // withRouter를 사용하여 location에 접근
 const NavBar = ({ location: { pathname } }) => {
   return (
-    <Nav>
-      <Logo />
-      <List>
-        <Item current={pathname === "/"}>
-          <SLink to="/">Home</SLink>
-        </Item>
-        <Item current={pathname === "/skills"}>
-          <SLink to="/skills">Skills</SLink>
-        </Item>
-        <Item current={pathname === "/projects"}>
-          <SLink to="/projects">Projects</SLink>
-        </Item>
-        <Item current={pathname === "/aboutme"}>
-          <SLink to="/aboutme">About Me</SLink>
-        </Item>
-        <Item current={pathname === "/contact"}>
-          <SLink to="/contact">Contact</SLink>
-        </Item>
-      </List>
-    </Nav>
+    <>
+      <Nav>
+        <Logo />
+        <List>
+          <Item current={pathname === "/"}>
+            <SLink to="/">Home</SLink>
+          </Item>
+          <Item current={pathname === "/skills"}>
+            <SLink to="/skills">Skills</SLink>
+          </Item>
+          <Item current={pathname === "/projects"}>
+            <SLink to="/projects">Projects</SLink>
+          </Item>
+          <Item current={pathname === "/aboutme"}>
+            <SLink to="/aboutme">About Me</SLink>
+          </Item>
+          <Item current={pathname === "/contact"}>
+            <SLink to="/contact">Contact</SLink>
+          </Item>
+        </List>
+      </Nav>
+      <Billboard text={getText(pathname)} />
+    </>
   );
 };
 
 export default withRouter(NavBar);
+
+// 경로에 맞는 텍스트로 변환해주기 위한 함수
+const getText = (pathname) => {
+  switch (pathname) {
+    case "/":
+      return `home`;
+    case "/skills":
+      return `skills`;
+    case "/projects":
+      return `projects`;
+    case "/aboutme":
+      return `aboutme`;
+    case "/contact":
+      return `contact`;
+    default:
+      return `hello`;
+  }
+};
