@@ -10,6 +10,7 @@ const SFooter = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
 `;
 
 const Text = styled.p`

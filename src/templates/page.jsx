@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const SPage = styled.div`
-  margin: 30px var(--main-padding);
+  margin: 30px var(--main-padding) 50px var(--main-padding);
 `;
 
 const Title = styled.span`

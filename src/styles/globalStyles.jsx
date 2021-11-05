@@ -35,6 +35,11 @@ const GlobalStyles = createGlobalStyle`
         --entire-limit: 1000px;
         --main-padding: 20px;
 
+        /**
+        Radius
+         */
+        --main-border-radius: 10px;
+
     }
 
     * {

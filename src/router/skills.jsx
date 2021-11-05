@@ -1,30 +1,44 @@
 import React from "react";
-import SkillItem from "../components/skill-item";
+import SkillItem from "../templates/skill-item";
 import Page from "../templates/page";
 import styled from "styled-components";
-
-const SkillList = styled.div`
-  width: 100%;
-  height: 70px;
-  border: 1px solid var(--main-color);
-`;
+import SkillList from "../templates/skill-list";
+import jsLogo from "../static/logo/javascript.png";
+import tsLogo from "../static/logo/typescript.png";
+import threejsLogo from "../static/logo/threejs.png";
+import blenderLogo from "../static/logo/blender.png";
+import reactLogo from "../static/logo/react.png";
 
 const Skills = (props) => {
   // skill 목록
   const skillList = [
     {
-      name: "html/css/javascript",
-      img: null,
+      category: "program language",
+      items: [
+        { name: "JavaScript", img: jsLogo },
+        { name: "Typescript", img: tsLogo },
+      ],
+    },
+    {
+      category: "framework",
+      items: [{ name: "React", img: reactLogo }],
+    },
+    {
+      category: "3D",
+      items: [
+        { name: "three.js", img: threejsLogo },
+        { name: "blender", img: blenderLogo },
+      ],
+    },
+    {
+      category: "interest",
+      items: [],
     },
   ];
 
   return (
     <Page title="skills">
-      <SkillList>
-        {skillList.map((skill, idx) => (
-          <SkillItem key={idx} skill={skill} />
-        ))}
-      </SkillList>
+      <SkillList skills={skillList} />
     </Page>
   );
 };

@@ -17,7 +17,7 @@ const Image = styled.div`
   background-position: center;
   background-size: cover;
   border: 1px solid var(--main-color);
-  border-radius: 10px;
+  border-radius: var(--main-border-radius);
   margin-bottom: 30px;
   &::before {
     content: "";
