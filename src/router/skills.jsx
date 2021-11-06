@@ -13,21 +13,13 @@ const Skills = (props) => {
   // skill 목록
   const skillList = [
     {
-      category: "program language",
+      category: "Skill List",
       items: [
         { name: "JavaScript", img: jsLogo },
         { name: "Typescript", img: tsLogo },
-      ],
-    },
-    {
-      category: "framework",
-      items: [{ name: "React", img: reactLogo }],
-    },
-    {
-      category: "3D",
-      items: [
-        { name: "three.js", img: threejsLogo },
-        { name: "blender", img: blenderLogo },
+        { name: "React", img: reactLogo },
+        { name: "Three.js", img: threejsLogo },
+        { name: "Blender", img: blenderLogo },
       ],
     },
     {

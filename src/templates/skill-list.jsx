@@ -11,17 +11,17 @@ const Box = styled.div`
 `;
 
 const CategoryName = styled.h3`
-  line-height: 1.5em;
+  display: inline;
   font-size: 1.5em;
   text-transform: capitalize;
 `;
 
 const Grid = styled.ul`
   display: grid;
-  grid-gap: 15px;
+  grid-gap: 17px;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  margin-top: 30px;
-  height: 140px;
+  margin-top: 20px;
+  min-height: 150px;
 `;
 
 const SkillList = ({ skills }) => {
