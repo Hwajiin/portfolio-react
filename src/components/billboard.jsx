@@ -22,8 +22,9 @@ const moveTextSec = keyframes`
 
 const Container = styled.div`
   width: 100%;
-  height: 30px;
+  height: 30%;
   border-bottom: 1px solid var(--main-color);
+  background-color: var(--main-background-color);
 `;
 
 const Box = styled.div`
