@@ -35,17 +35,17 @@ const Box = styled.div`
 `;
 
 const First = styled.div`
-  animation: ${moveTextFirst} 20s infinite linear;
+  animation: ${moveTextFirst} 30s infinite linear;
 `;
 
 const Second = styled.div`
-  animation: ${moveTextSec} 20s infinite linear;
-  animation-delay: 10s;
+  animation: ${moveTextSec} 30s infinite linear;
+  animation-delay: 15s;
 `;
 
 const Text = styled.span`
   text-transform: uppercase;
-  margin-right: 50px;
+  margin-right: 60px;
 `;
 
 const Billboard = ({ text }) => {
@@ -60,8 +60,20 @@ const Billboard = ({ text }) => {
           <Text>{text}</Text>
           <Text>{text}</Text>
           <Text>{text}</Text>
+          <Text>{text}</Text>
+          <Text>{text}</Text>
+          <Text>{text}</Text>
+          <Text>{text}</Text>
+          <Text>{text}</Text>
+          <Text>{text}</Text>
         </First>
         <Second>
+          <Text>{text}</Text>
+          <Text>{text}</Text>
+          <Text>{text}</Text>
+          <Text>{text}</Text>
+          <Text>{text}</Text>
+          <Text>{text}</Text>
           <Text>{text}</Text>
           <Text>{text}</Text>
           <Text>{text}</Text>
