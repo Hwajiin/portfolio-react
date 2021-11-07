@@ -6,6 +6,8 @@ const List = styled.ul`
   display: flex;
   justify-self: flex-end;
   background-color: var(--main-background-color);
+  transition: opacity 0.2s ease-in;
+
   ${({ direction }) => {
     return direction === "column"
       ? `
@@ -14,7 +16,7 @@ const List = styled.ul`
       padding: 10px 0;
     `
       : null;
-  }}
+  }};
 `;
 
 const Item = styled.li`
@@ -48,6 +50,7 @@ const SLink = styled(Link)`
 `;
 
 const NavbarMenu = ({ pathname, direction = "row" }) => {
+  // TODO: nav smooth animation and toggle function
   return (
     <List direction={direction}>
       <Item current={pathname === "/"}>
