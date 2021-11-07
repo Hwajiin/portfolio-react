@@ -32,7 +32,7 @@ const Image = styled.div`
   }
 `;
 
-const Meta = styled.div``;
+const Address = styled.address``;
 
 const Text = styled.p`
   margin-bottom: 10px;
@@ -46,11 +46,12 @@ const Contact = () => {
     <Page title="contact">
       <Container>
         <Image url={imageURL} />
-        <Meta>
+        <Address>
+          {/* TODO: 주소에 a 링크 생성하기 */}
           <Text>Mobile: 010.6221.5291</Text>
           <Text>E-mail: borderline0px@gmail.com</Text>
           <Text>Github</Text>
-        </Meta>
+        </Address>
       </Container>
     </Page>
   );
